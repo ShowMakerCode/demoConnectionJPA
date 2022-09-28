@@ -8,6 +8,6 @@ import java.util.List;
 
 @Repository
 public interface HibernateConection extends JpaRepository<Person,Integer> {
-    @Query(value = "select o from Person o",nativeQuery = false)
+    @Query(value = "select * from Person",nativeQuery = true)
     List<Person> getAllIlike();
 }
