@@ -8,10 +8,8 @@ import org.springframework.context.ConfigurableApplicationContext;
 public class DemoConnectMysqlApplication {
 
     public static void main(String[] args) {
+    SpringApplication.run(DemoConnectMysqlApplication.class, args);
 
-        ConfigurableApplicationContext configurableApplicationContext= SpringApplication.run(DemoConnectMysqlApplication.class, args);
-//        configurableApplicationContext.getBean()
-        Person person = new Person();
     }
 
 }
